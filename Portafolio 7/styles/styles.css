@@ -1,0 +1,173 @@
+:root{
+    --title: 150px;
+    --subtitle: 50px;
+    --subsection: 45px;
+    --semibold: 600;
+    --regular: 400;
+    --medium: 500;
+    --dark: #020403;
+    --gray: #ADADAD;
+    --white: #ffffff;
+    --mtitle: 40px;
+    --msubtitle: 25px;
+    --msubsection: 18px;
+
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+
+/*utilidades*/
+.center{
+    text-align: center;
+}
+.centerflex{
+    align-items: center;
+    flex-direction: center;
+}
+
+.margin-buttom{
+    margin-bottom: 50px;
+}
+
+.gray{
+    color: gray;
+}
+
+.start{
+    justify-content: flex-start;
+}
+
+.end{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+/*------------*/
+
+body{
+    font-size: 18px;
+    font-weight: var(--regular);
+    background-color: var(--dark);
+    color: var(--white);
+    font-family: 'Rubik', sans-serif;
+}
+
+header{
+    width: 100%;
+}
+
+header nav ul{
+    display: flex;
+    gap: 100px;
+    justify-content: flex-end;
+    margin-right: 200px;
+    list-style: none;
+    text-decoration: none;
+    color: var(--white);
+}
+
+header nav ul a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+/*------------main------------*/
+
+main{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container-img{
+    width: 100%;
+    text-align: center;
+    margin: 80px 0px 30px;
+}
+
+.container-img img{
+    width: 200px;
+}
+
+.container-title h2{
+    text-align: center;
+    color: var(--gray);
+}
+
+.container-title h1{
+    margin: 0;
+    text-align: center;
+    font-size: var(--subtitle);
+    font-weight: var(--regular);
+}
+
+.icon-website{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin-top: 15px;
+}
+
+.about-me{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    color: var(--gray);
+    margin-bottom: 45px;
+}
+
+.about-me h2{
+    font-size: var(--subsection);
+    color: var(--white);
+    font-weight: var(--regular);
+
+}
+
+.skills{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.skills h2{
+    font-size: var(--subsection);
+    font-weight: var(--regular);
+}
+
+.skills .icons-skills{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    color: var(--gray);
+}
+
+.skills .icons-skills svg{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    padding: 15px;
+    background-color: rgb(37, 32, 25);
+}
+
+.skills figure figcaption{
+    font-size: 10px;
+    font-weight: var(--semibold);
+}
+
+
+
+
+
+
+/*title, semibold
+subtitle semibold
+subseccion, regular
