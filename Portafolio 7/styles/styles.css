@@ -62,17 +62,17 @@ body{
 }
 
 header{
-    width: 100%;
+    width: 75%;
+    margin: 0 auto;
 }
 
 header nav ul{
     display: flex;
-    gap: 100px;
     justify-content: flex-end;
-    margin-right: 200px;
     list-style: none;
     text-decoration: none;
     color: var(--white);
+    gap: 80px;
 }
 
 header nav ul a{
@@ -83,7 +83,7 @@ header nav ul a{
 /*------------main------------*/
 
 main{
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -126,11 +126,12 @@ main{
 }
 
 .about-me h2{
-    font-size: var(--subsection);
     color: var(--white);
     font-weight: var(--regular);
 
 }
+
+/*habilidades*/
 
 .skills{
     width: 100%;
@@ -138,7 +139,6 @@ main{
 }
 
 .skills h2{
-    font-size: var(--subsection);
     font-weight: var(--regular);
 }
 
@@ -163,10 +163,83 @@ main{
     font-weight: var(--semibold);
 }
 
+/*Experiencia*/
+
+.container-exp > .first-cont, .second-cont, .third-cont{  
+    text-align: center;
+    margin: 0;
+}
+
+.container-exp h4{  
+    margin: 0;
+}
+
+.container-exp .data p{ 
+    text-align: start;
+    position: relative;
+    margin-left: 208px;
+
+}
+
+.container-exp hr{
+    position: absolute;
+    width: 50%;
+    margin-left: 210px;
+}
+
+/*calcular la medida de los iconos de la experiencia*/
+.container-exp .first-cont .margin{
+    margin-right: 60px;
+}
+
+.container-exp .second-cont .margin-subtitle{
+    margin-left: 19px;
+}
+
+.container-exp .second-cont .margin-second{
+    margin-right: 50px;
+}
+
+.container-exp .third-cont .third-sub-margin{
+    margin-right: 30px;
+}
+
+.container-exp .third-cont .margin-third{
+    margin-right: 70px;
+}
+
+/*Portafolio*/
+
+.portfolio{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.portfolio figure{
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.portfolio figure img{
+    width: 300px;
+}
+
+.contacts .all-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
-
+.contacts .icons-contacts svg{
+    border: 1px solid var(--white);
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 50px;
+}
 
 /*title, semibold
 subtitle semibold
