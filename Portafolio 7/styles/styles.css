@@ -54,7 +54,7 @@ body{
 }
 
 .float{
-    top: 1650px;
+    top: 1500px;
     position: absolute;
 }
 
@@ -97,34 +97,35 @@ body{
 /*--------Second circle--------*/
 
 .secondcircle{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border: 1px solid var(--white);
-    border-radius: 50px;
-    position:relative;
-    float: right;
+    border-radius: 150px;
+    position:absolute;
+    right: 0;
+    top: 900px;
 }
 
 .secondcircle::before{
     content: "";
-    width: 90px;
-    height: 90px;
+    width: 170px;
+    height: 170px;
     border: 1px solid var(--white);
-    border-radius: 50px;
+    border-radius: 150px;
     position: absolute;
-    right: 4px;
-    top: 3px;
+    right: 12px;
+    top: 11px;
 }
 
 .secondcircle::after{
     content: "";
-    width: 75px;
-    height: 75px;
+    width: 150px;
+    height: 150px;
     border: 1px solid var(--white);
-    border-radius: 50px;
+    border-radius: 150px;
     position: absolute;
-    right: 11px;
-    top: 10px;
+    right: 21px;
+    top: 21px;
 }
 
 header{
@@ -224,7 +225,7 @@ main{
 
 .group-icons{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin-right: 75px;
 }
@@ -279,7 +280,7 @@ main{
 }
 
 .portfolio figure img{
-    max-width: 400px;
+    width: 350px;
 }
 
 /*Contactos*/
@@ -310,6 +311,11 @@ main{
 }
 
 @media (max-width: 1000px){
+    
+    body{
+        overflow-x: none;
+    }
+
     header .nav-bg{
         display: none;
     }
@@ -318,5 +324,41 @@ main{
         display: block;
         right: 120px;
         top: 15px;
+    }
+
+    .portfolio figure img{
+        width: 200px;
+    }
+
+    .portfolio figure{
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+        gap: none;
+    }
+}
+
+@media (max-width: 800px){
+
+    header svg{
+        right: 150px;
+    }
+
+    body{
+        overflow-x: none;
+    }
+    
+    .about-me{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .portfolio{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .portfolio figure img{
+        width: 150px;
     }
 }
