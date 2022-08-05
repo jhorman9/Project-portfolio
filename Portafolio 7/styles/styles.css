@@ -51,6 +51,7 @@ body{
     color: var(--white);
     font-family: 'Rubik', sans-serif;
     position: relative;
+    overflow-x: none;
 }
 
 .float{
@@ -280,7 +281,7 @@ main{
 }
 
 .portfolio figure img{
-    width: 350px;
+    width: 300px;
 }
 
 /*Contactos*/
@@ -341,7 +342,7 @@ main{
 @media (max-width: 800px){
 
     header svg{
-        right: 150px;
+        right: 50px;
     }
 
     body{
