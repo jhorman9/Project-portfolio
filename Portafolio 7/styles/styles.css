@@ -29,10 +29,6 @@ html {
 .center{
     text-align: center;
 }
-.centerflex{
-    align-items: center;
-    flex-direction: center;
-}
 
 .margin-buttom{
     margin-bottom: 50px;
@@ -46,11 +42,6 @@ html {
     justify-content: flex-start;
 }
 
-.end{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
 /*------------*/
 
 body{
@@ -59,16 +50,107 @@ body{
     background-color: var(--dark);
     color: var(--white);
     font-family: 'Rubik', sans-serif;
+    position: relative;
+}
+
+.float{
+    top: 1650px;
+    position: absolute;
+}
+
+.floatsecond{
+    top: 500px;
+    position: absolute;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border: 1px solid var(--white);
+    border-radius: 150px;
+    position:relative;
+    margin-left: -80px;
+}
+
+.circle::before{
+    content: "";
+    width: 170px;
+    height: 170px;
+    border: 1px solid var(--white);
+    border-radius: 150px;
+    position: absolute;
+    right: 12px;
+    top: 11px;
+}
+
+.circle::after{
+    content: "";
+    width: 150px;
+    height: 150px;
+    border: 1px solid var(--white);
+    border-radius: 150px;
+    position: absolute;
+    right: 21px;
+    top: 21px;
+}
+
+/*--------Second circle--------*/
+
+.secondcircle{
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    position:relative;
+    float: right;
+}
+
+.secondcircle::before{
+    content: "";
+    width: 90px;
+    height: 90px;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    position: absolute;
+    right: 4px;
+    top: 3px;
+}
+
+.secondcircle::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    position: absolute;
+    right: 11px;
+    top: 10px;
 }
 
 header{
     width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+header svg{
+    display: none;
+    position: absolute;
+    right: 50px;
+}
+
+header .main-nav{
+    width: 90%;
+    height: 100%;
+    background-color: blue;
 }
 
 .nav-bg{
     width: 85%;
     display: flex;
     justify-content: flex-end;
+    text-align: center;
 }
 
 header nav ul{
@@ -88,7 +170,7 @@ header nav ul a{
 /*------------main------------*/
 
 main{
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -116,14 +198,16 @@ main{
 
 .icon-website{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 90px;
+    width: 35%;
+    margin: auto;
     margin-top: 15px;
 }
 
+/*------------ACERCA DE MI-------------*/
+
 .about-me{
-    width: 100%;
     text-align: center;
     margin-top: 50px;
     color: var(--gray);
@@ -136,13 +220,7 @@ main{
 
 }
 
-/*habilidades*/
-
-.skills{
-    display: grid;
-    width: 75%;
-    margin: auto;
-}
+/*---------Habilidades----------*/
 
 .group-icons{
     display: flex;
@@ -169,11 +247,7 @@ main{
 }
 
 
-/*Experiencia*/
-
-.container-exp{
-    width: 100%;
-}
+/*----------Experiencia-----------*/
 
 .container-exp > .first-cont, .second-cont, .third-cont{  
     text-align: center;
@@ -186,7 +260,8 @@ main{
 
 .container-exp .data p{ 
     text-align: start;
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
     border-bottom: 1px solid var(--gray);
 }
 /*Portafolio*/
@@ -199,12 +274,12 @@ main{
 .portfolio figure{
     margin: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 20px;
 }
 
 .portfolio figure img{
-    min-width: 250px;
+    max-width: 400px;
 }
 
 /*Contactos*/
@@ -234,65 +309,14 @@ main{
     font-size: 14px;
 }
 
-@media (max-width: 1200px){
-    header nav ul{
-        gap: 20px;
-    }
-
-    .skills{
-        width: 100%;
-    }
-}
-
 @media (max-width: 1000px){
-    header nav ul{
-        gap: 10px;
+    header .nav-bg{
+        display: none;
     }
 
-    main{
-        margin: 0 auto;
-        width: 80%;
-    }
-    .skills{
-        width: 100%;
-    }
-}
-
-@media (max-width: 820px){
-    .portfolio figure img{
-        min-width: 200px;
-    }
-}
-
-@media (max-width: 819px){
-    .icon-website{
+    header svg{
         display: block;
+        right: 120px;
+        top: 15px;
+    }
 }
-
-@media (max-width: 800px){
-    body{
-        font-size: 16px;
-        width: 80rem;
-    }
-
-    nav{
-        width: 100%;
-    }
-
-    header nav ul{
-        gap: 2px;
-    }
-
-    main{
-        margin: 0 auto;
-        width: 90%;
-    }
-
-    .skills{
-        width: 75%;
-    }
-
-}
-/*title, semibold
-subtitle semibold
-subseccion, regular
