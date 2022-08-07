@@ -424,6 +424,11 @@ main{
         width: 50%;
     }
 
+    .about-me{
+        width: 95%;
+        margin: 0 auto;
+    }
+
     .about-me p{
         width: 100%;
         margin: 0 auto;
@@ -478,7 +483,7 @@ main{
     }
 
     .portfolio figure img{
-        width: 75%;
+        width: 80%;
         margin: 0 auto;
     }
 }
