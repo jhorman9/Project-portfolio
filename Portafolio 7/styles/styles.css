@@ -341,12 +341,12 @@ main{
 
 @media (max-width: 800px){
 
-    header svg{
-        right: 50px;
-    }
-
     body{
         overflow-x: none;
+    }
+
+    header svg{
+        right: 50px;
     }
     
     .about-me{
@@ -361,5 +361,124 @@ main{
 
     .portfolio figure img{
         width: 150px;
+    }
+}
+
+@media (max-width: 700px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .float{
+        top: 1600px;
+        left: 0px;
+        position: absolute;
+    }
+
+    .circle{
+        width: 100px;
+        height: 100px;
+        border: 1px solid var(--white);
+        border-radius: 150px;
+        position:relative;
+        margin-left: 0;
+
+    }
+    
+    .circle::before{
+        content: "";
+        width: 70px;
+        height: 70px;
+        border: 1px solid var(--white);
+        border-radius: 150px;
+        position: absolute;
+        right: 12px;
+        top: 12px;
+    }
+    
+    .circle::after{
+        content: "";
+        width: 50px;
+        height: 50px;
+        border: 1px solid var(--white);
+        border-radius: 150px;
+        position: absolute;
+        right: 21px;
+        top: 21px;
+    }
+
+    main{
+        width: 95%;
+    }
+
+    .container-title h2{
+        font-size: var(--msubsection);
+    }
+
+    .container-title h1{
+        font-size: var(--mtitle);
+    }
+
+    .icon-website{
+        width: 50%;
+    }
+
+    .about-me p{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .secondcircle{
+        width: 100px;
+        height: 100px;
+        border: 1px solid var(--white);
+        border-radius: 150px;
+        position:absolute;
+        right: 40px;
+        top: 920px;
+    }
+    
+    .secondcircle::before{
+        content: "";
+        width: 70px;
+        height: 70px;
+        border: 1px solid var(--white);
+        border-radius: 150px;
+        position: absolute;
+        right: 12px;
+        top: 12px;
+    }
+    
+    .secondcircle::after{
+        content: "";
+        width: 50px;
+        height: 50px;
+        border: 1px solid var(--white);
+        border-radius: 150px;
+        position: absolute;
+        right: 21px;
+        top: 21px;
+    }
+
+    .skills .group-icons{
+        display: block;
+        margin: 0;
+    }
+
+    .container-exp{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .portfolio figure{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .portfolio figure img{
+        width: 75%;
+        margin: 0 auto;
     }
 }
