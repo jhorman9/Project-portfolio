@@ -12,17 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="float"><div class="circle"></div></div>
     <header>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="nav-toggle" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <line x1="4" y1="6" x2="20" y2="6" />
             <line x1="4" y1="12" x2="20" y2="12" />
             <line x1="4" y1="18" x2="20" y2="18" />
         </svg>
+        <div class="nav-js"></div>
         <div class="nav-bg">
             <nav>
-                <ul>
+                <ul class="nav-menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Acerca de mí</a></li>
                     <li><a href="#">Mis habilidades</a></li>
@@ -144,14 +144,14 @@
             <h2 class="center">Experiencia</h2>
             <div class = "first-cont">
                 <h4>Visual designer</h4>
-                <h4 class="margin gray">Wizeline</h4>
+                <h4 class="first-margin gray">Wizeline</h4>
                 <div class="data">
                     <p>2018-2019</p>
                 </div>
             </div>
             <div class = "second-cont">
                 <h4 class="margin-subtitle">Product designer</h4>
-                <h4 class="margin-second gray">Microsoft</h4>
+                <h4 class="second-margin gray">Microsoft</h4>
                 <div class="data">
                     <p>2018-2019</p>
                 </div>
@@ -161,11 +161,12 @@
                 <h4 class="margin-third gray">Google</h4>
                 <div>
                     <div class="data">
-                        <p>2018-2019</p>
+                        <p class="none">2018-2019</p>
                     </div>
                 </div>
             </div>    
         </section>
+        <div class="float"><div class="circle"></div></div>
         <section class="portfolio">
             <h2 class="center">Portafolio</h2>
             <figure class="portfolio-img">
@@ -175,7 +176,7 @@
             </figure>
         </section>
         <section class="contacts">
-            <h2 class="center">Contacto</h2>
+            <h2 class="start center">Contacto</h2>
             <div class="all-info">
                 <div class="icons-contacts center">
                     <svg width="40" 
@@ -188,7 +189,6 @@
                         stroke-linecap="round" 
                         stroke-linejoin="round"/>
                     </svg>
-                    <h4 class="center"></h4>
                         <p class="center">Numero de celular</p>
                         <p class="center">04168621147</p>
                 </div>
@@ -220,4 +220,5 @@
         <h4> Hecho con corazon por academlo</h>
     </footer>
 </body>
+<script src="Portafolio 7/js/app.js"></script>
 </html>
