@@ -354,26 +354,35 @@ main{
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 75px;
         background-color: var(--gray);
         z-index: 1;
-        overflow-y: auto;
         display: none;
+        top: 0;
     }
 
     .nav-bg li{
-        margin-top: 50px;
+        margin-bottom: 45px;
         width: 500px;
         height: auto;
+        font-size: 20px;
+        box-sizing: border-box;
+        font-size: 50px;
     }
 
     .nav-bg li:hover{
         background-color: var(--dark);
-        margin: 0 auto;
-        margin-top: 50px;
+        margin-bottom: 45px;
         justify-content: center;
     }
     
+    .nav-bg .nav-menu{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     header nav ul{
         display: block;
         justify-content: flex-end;
@@ -387,6 +396,7 @@ main{
         display: block;
         right: 40px;
         top: 15px;
+        z-index: 3;
     }
 
     .portfolio figure img{
@@ -462,6 +472,11 @@ main{
     .secondcircle::after{
         left: 8px;
         top: 8px;
+    }
+
+    .nav-bg{
+        width: 100%;
+        height: 100vh;
     }
 
 /*---------------------------------------*/
@@ -629,6 +644,11 @@ main{
     header svg{
         position: absolute;
         right: 40px;
+    }
+
+    .nav-bg{
+        width: 100%;
+        height: 100vh;
     }
 
     .container-exp .data p{ 
