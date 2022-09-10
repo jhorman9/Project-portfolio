@@ -343,6 +343,7 @@ main{
         height: 100vh;
         font-size: 20px;
         background-color: var(--gray);
+        display: none;
     }
 
     .nav-bg nav{
