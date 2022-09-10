@@ -12,16 +12,6 @@ navToggle.addEventListener("click", ()=> {
     }
 })
 
-let recorrido = list.forEach(element =>{
-    element.addEventListener("click", ()=> {
-        if(element.style.display == "block"){
-            navBg.style.display = "none"
-        }else{
-            element.style.display = "block";
-        }
-    })
-    
-})
 
 
 
